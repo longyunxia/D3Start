@@ -17,9 +17,9 @@
 [如何完成一个用户轨迹图绘制](#如何完成一个用户轨迹图绘制)
 
 
-# 常用数据可视化工具
+## 常用数据可视化工具
 http://blog.csdn.net/u013511989/article/details/72236788
-# d3简介
+## d3简介
 
  D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
 D3 (Data-Driven Documents or D3.js) 是一个Web标准的书籍可视化工具库。 D3帮助我们通过使用SVG、Canvas、HTML让数据变得生动，D3将可视化、交互技术与数据驱动的DOM操作完美结合。让我们可以充分发挥现代浏览器的功能，自由地设计合理的数据可视化界面。
@@ -30,7 +30,7 @@ https://d3js.org/#transformation
 功能模块
 
 ![d3功能模块](http://upload-images.jianshu.io/upload_images/280923-4dfaf35d0eb1d04f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-# 安装
+### 安装
 
 NPM: `npm install d3`或script标签引用
 ```javascript
@@ -47,7 +47,7 @@ import {scaleLinear} from "d3-scale";
 #支持环境
 D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
-# d3API
+## d3API
 
 [API](https://github.com/d3/d3/blob/master/API.md)
 
@@ -58,15 +58,15 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Brushes](https://github.com/xswei/d3js_doc/tree/master/API/d3-brush-master)(**刷子**)
 
-* [Chords](https://github.com/xswei/d3js_doc/tree/master/API/d3-chord-master)(**弦图**)
+* [Chords](https://github.com/xswei/d3js_doc/tree/master/API/d3-chord-master)(弦图)
 
-* [Collections](https://github.com/xswei/d3js_doc/tree/master/API/d3-collection-master)(Object,Maps,Sets,Nests)(**集合、对象、map、嵌套**)
+* [Collections](https://github.com/xswei/d3js_doc/tree/master/API/d3-collection-master)(Object,Maps,Sets,Nests)(集合、对象、map、嵌套)
 
-* [Colors](https://github.com/xswei/d3js_doc/tree/master/API/d3-color-master)(**颜色**)
+* [Colors](https://github.com/xswei/d3js_doc/tree/master/API/d3-color-master)(颜色)
 
-* [Delimiter-Separated Values(d3-dsv)](https://github.com/xswei/d3js_doc/tree/master/API/d3-dsv-master)(**dsv模块**)
+* [Delimiter-Separated Values(d3-dsv)](https://github.com/xswei/d3js_doc/tree/master/API/d3-dsv-master)(dsv模块)
 
-* [Dispatches](https://github.com/xswei/d3js_doc/tree/master/API/d3-dispatch-master)(**事件调度**)
+* [Dispatches](https://github.com/xswei/d3js_doc/tree/master/API/d3-dispatch-master)(事件调度)
 
 * [Dragging](https://github.com/xswei/d3js_doc/tree/master/API/d3-drag-master)(**拖拽**)
 
@@ -74,19 +74,19 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Forces](https://github.com/xswei/d3js_doc/tree/master/API/d3-force-master)(**力学仿真模拟**)
 
-* [Number Formats](https://github.com/xswei/d3js_doc/tree/master/API/d3-format-master)(**数值格式化**)
+* [Number Formats](https://github.com/xswei/d3js_doc/tree/master/API/d3-format-master)(数值格式化)
 
-* [Geographies](https://github.com/xswei/d3js_doc/tree/master/API/d3-geo-master)(**地理**)
+* [Geographies](https://github.com/xswei/d3js_doc/tree/master/API/d3-geo-master)(地理)
 
 * [Hierarchies](https://github.com/xswei/d3js_doc/tree/master/API/d3-hierarchy-master)(层次结构布局)
 
 * [Interpolators](https://github.com/xswei/d3js_doc/tree/master/API/d3-interpolate-master)(插值器)
 
-* [Paths](https://github.com/xswei/d3js_doc/tree/master/API/d3-path-master)(**Canvas和SVG之间互转**)
+* [Paths](https://github.com/xswei/d3js_doc/tree/master/API/d3-path-master)(Canvas和SVG之间互转)
 
-* [Polygons](https://github.com/xswei/d3js_doc/tree/master/API/d3-polygon-master)(**二维多边形**)
+* [Polygons](https://github.com/xswei/d3js_doc/tree/master/API/d3-polygon-master)(二维多边形)
 
-* [Quadtrees](https://github.com/xswei/d3js_doc/tree/master/API/d3-quadtree-master)(**四叉树**)
+* [Quadtrees](https://github.com/xswei/d3js_doc/tree/master/API/d3-quadtree-master)(四叉树)
 
 * [Queues](https://github.com/xswei/d3js_doc/tree/master/API/d3-queue-master)(**队列**)
 
@@ -104,7 +104,7 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Time Intervals](https://github.com/xswei/d3js_doc/tree/master/API/d3-time-master)(时间间隔)
 
-* [Timers](https://github.com/xswei/d3js_doc/tree/master/API/d3-timer-master)(**定时器**)
+* [Timers](https://github.com/xswei/d3js_doc/tree/master/API/d3-timer-master)(定时器)
 
 * [Transitions](https://github.com/xswei/d3js_doc/tree/master/API/d3-transition-master)(过渡)
 
@@ -207,11 +207,11 @@ ordinal(0); //返回 red
 ordinal(2); //返回 green
 ordinal(4); //返回 black
 ```
-# SVG基础
+## SVG基础
 圆、箭头、路径、线条
 [W3School](http://www.w3school.com.cn/svg/index.asp)
 
-# 如何完成一个用户轨迹图绘制
+## 如何完成一个用户轨迹图绘制
 
 ### 需求：
 
