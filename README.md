@@ -56,7 +56,7 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Axes](https://github.com/xswei/d3js_doc/tree/master/API/d3-axis-master)(**坐标轴**)
 
-* [Brushes](https://github.com/xswei/d3js_doc/tree/master/API/d3-brush-master)(**刷子**)
+* [Brushes](https://github.com/xswei/d3js_doc/tree/master/API/d3-brush-master)(刷子)
 
 * [Chords](https://github.com/xswei/d3js_doc/tree/master/API/d3-chord-master)(弦图)
 
@@ -88,11 +88,11 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Quadtrees](https://github.com/xswei/d3js_doc/tree/master/API/d3-quadtree-master)(四叉树)
 
-* [Queues](https://github.com/xswei/d3js_doc/tree/master/API/d3-queue-master)(**队列**)
+* [Queues](https://github.com/xswei/d3js_doc/tree/master/API/d3-queue-master)(队列)
 
-* [Random Numbers](https://github.com/xswei/d3js_doc/tree/master/API/d3-random-master)(**随机数**)
+* [Random Numbers](https://github.com/xswei/d3js_doc/tree/master/API/d3-random-master)(随机数)
 
-* [Requests](https://github.com/xswei/d3js_doc/tree/master/API/d3-request-master)(**数据请求**)
+* [Requests](https://github.com/xswei/d3js_doc/tree/master/API/d3-request-master)(数据请求)
 
 * [Scales](https://github.com/xswei/d3js_doc/tree/master/API/d3-scale-master)  (Continuous, Sequential, Quantize, Ordinal)(比例尺)
 
@@ -158,6 +158,7 @@ selection.classed("foo bar");//获取类名状态
 
 数据绑定是当数组的长度与元素数量不一致（数组长度 > 元素数量 or 数组长度 < 元素数量），这时候就需要理解 Update、Enter、Exit 的概念。
 如果数组为 [3, 6, 9, 12, 15]，将此数组绑定到三个 p 元素的选择集上。可以想象，会有两个数据没有元素与之对应，这时候 D3 会建立两个空的元素与数据对应，这一部分就称为 Enter。而有元素与数据对应的部分称为 Update。如果数组为 [3]，则会有两个元素没有数据绑定，那么没有数据绑定的部分被称为 Exit。[参考](http://wiki.jikexueyuan.com/project/d3wiki/enterexit.html)
+
 ![enter exit图解](http://upload-images.jianshu.io/upload_images/280923-7b4b685d4dc4d182.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 比例尺
@@ -284,7 +285,7 @@ var graph = {
 index - 节点的索引
 x - 节点当前的 x-位置
 y - 节点当前的 y-位置
-vx - 节点当前的 x-速度
+vx - 节点当前的 x-速度 
 vy - 节点当前的 y-速度
 下一个位置 ⟨x + vx,y + vy⟩
 如果要为某个节点设置默认的位置，则需要为该节点设置如下两个属性:
