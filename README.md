@@ -5,10 +5,13 @@
 
 [常用API](#d3api)
 
-- API总览
-- 元素操作
-- 数据绑定
-- 比例尺
+- [API总览](#d3api)
+- [元素操选择](#元素操选择)
+- [元素编辑](#元素编辑)
+- [数据绑定](#数据绑定)
+- [比例尺](#比例尺)
+
+[SVG基础](#SVG基础)
 
 [如何完成一个用户轨迹图绘制](#如何完成一个用户轨迹图绘制)
 
@@ -106,10 +109,12 @@ D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 * [Voronoi Diagrams](https://github.com/xswei/d3js_doc/tree/master/API/d3-voronoi-master)(Voronoi图)
 
-* [Zooming](https://github.com/xswei/d3js_doc/tree/master/API/d3-zoom-master)(**缩放**)
+* [Zooming](https://github.com/xswei/d3js_doc/tree/master/API/d3-zoom-master)(缩放)
+
 ### 常用方法举例
 
 [d3-selection](https://github.com/d3/d3-selection) 
+
 #### 元素操选择
 
 ***d3.select(selector)*** 选择第一个匹配selector字符串的元素:
@@ -201,9 +206,11 @@ ordinal(0); //返回 red
 ordinal(2); //返回 green
 ordinal(4); //返回 black
 ```
+# SVG基础
+圆、箭头、路径、线条
+[W3School](http://www.w3school.com.cn/svg/index.asp)
 
 # 如何完成一个用户轨迹图绘制
-
 
 ### 需求：
 
