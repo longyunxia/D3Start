@@ -44,7 +44,7 @@ d3是由各个模块协同工作的，而不是一个单独的库（v4版本开�
 ```javascript
 import {scaleLinear} from "d3-scale";
 ```
-#支持环境
+### 支持环境
 D3支持“现代”浏览器，也就是除IE8及以下的浏览器。
 
 ## d3API
