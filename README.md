@@ -14,6 +14,8 @@
 
 [SVG基础](#svg基础)
 
+[举个栗子🌰](#举个例子)
+
 [如何完成一个用户轨迹图绘制](#如何完成一个用户轨迹图绘制)
 
 
@@ -209,8 +211,16 @@ ordinal(2); //返回 green
 ordinal(4); //返回 black
 ```
 ## SVG基础
+SVG 意为可缩放矢量图形（Scalable Vector Graphics）。
+SVG 使用 XML 格式定义图像。
 圆、箭头、路径、线条
 [W3School](http://www.w3school.com.cn/svg/index.asp)
+
+## 举个例子
+
+![image.png](http://upload-images.jianshu.io/upload_images/280923-236df1231bc24294.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+
+[地址](http://localhost:63342/demo/d3-histogram.html?_ijt=bam8m7m8l6sfhndrlrggs47vfi)
 
 ## 如何完成一个用户轨迹图绘制
 
