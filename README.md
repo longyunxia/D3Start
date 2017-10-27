@@ -181,21 +181,25 @@ d3中的比例尺描述的是一种映射关系；
 在数学中，x 的范围被称为**定义域**，y 的范围被称为**值域**。
 D3 中的比例尺，也有定义域和值域，分别被称为 domain 和 range。开发者需要指定 domain 和 range 的范围，如此即可得到一个计算关系。
 
+
 ##### 常用比例尺
 
 ***连续型比例尺Continuous Scales***
 连续型比例尺可以将连续的，可量化的输入 domain 映射到另一个一个连续区间 range.如果 range 也是数值类型，则映射可以 inverted(逆计算). 连续比例使用 linear, power, log, identity, time 或 sequential color 来创建.
 ```javascript
 var x = d3.scaleLinear()
-    .domain([0, 10])
-    .range([0, 100]);
+    .domain([0, 100])
+    .range([0, 10]);
 
-x(1); // 10
-x(5); // 50
-x.invert(80);//8 逆运算
+x(10); // 1
+x(50); // 5
+x.invert(8);//80 逆运算
 ```
+![y=1/10x](http://upload-images.jianshu.io/upload_images/280923-e4c02f396b0a1a18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ***Quantize Scales量化比例尺***
-量化比例尺根据输出范围将输入分割成不同的片段，每个片段内的值都会对应同一个range值。
+量化比例尺根据输出范围将输入分割成不同的片段，每个片段内的值都会对应同一个range值（定义域是连续的，值域是离散的）。
 ```javascript
 var color = d3.scaleQuantize()
     .domain([0, 1])
@@ -205,7 +209,7 @@ color(0.49); // "brown"
 color(0.51); // "steelblue"
 ```
 ***Ordinal Scales序数比例尺***
-有时候，定义域和值域不一定是连续的。例如，有两个数组：
+有时候，定义域和值域不一定是连续的，都是离散的。 例如，有两个数组：
 ```javascript
 var index = [0, 1, 2, 3, 4];
 var color = ["red", "blue", "green", "yellow", "black"];
