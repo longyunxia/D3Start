@@ -21,6 +21,18 @@
 
 ## 常用数据可视化工具
 http://blog.csdn.net/u013511989/article/details/72236788
+
+| 工具库|兼容性 |是否免费/开源| 优点 | 缺点 |
+| --- | --- | --- | --- | --- |
+| [D3](https://github.com/d3/d3/wiki/Gallery) |IE9|完全免费，代码开源 |能够通过扩展实现任何可以想到的数据可视化效果，调试容易、扩展效果较多、调用方式类JQuery| 学习曲线太过严苛、好效果需要深入理解JavaScript |
+| [Echarts](http://echarts.baidu.com/) |IE6|完全免费，代码开源|中文文档和支持、使用方便，底层依赖轻量级的 Canvas 类库 ZRender|基础图形都有，地图也有(扩展不多)。提供很多参数接口，但是不能自己定义新的图形样式|
+| [Highcharts](http://www.highcharts.com/demo)|IE6 |非商业免费，商业需授权，代码开源|超轻量级，并且性能非常好，浏览器兼容性好|图表类型有限|
+|[Chart.js](http://www.chartjs.org/samples/latest/)|支持所有现代浏览器|开源|响应式|图表类型有限|
+
+[FusionCharts](https://www.fusioncharts.com/)、 [JavaScript InfoVis Toolkit](http://philogb.github.io/jit/)、[zingchart](https://www.zingchart.com/)
+
+Highcharts currently supports line, spline, area, areaspline, column, bar, pie, scatter, angular gauges, arearange, areasplinerange, columnrange, bubble, box plot, error bars, funnel, waterfall and polar chart types.
+
 ## d3简介
 
  D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
